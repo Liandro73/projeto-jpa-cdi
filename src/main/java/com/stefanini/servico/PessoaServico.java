@@ -11,58 +11,53 @@ import com.stefanini.model.Pessoa;
 import com.stefanini.util.IGenericService;
 
 /**
- * 
  * Classe de servico, as regras de negocio devem estar nessa classe
- * @author joaopedromilhome
  *
+ * @author joaopedromilhome
  */
 public class PessoaServico implements IGenericService<Pessoa, Long> {
-	
-	@Inject
-	private PessoaDao dao;
-	
-	
-	/**
-	 * Salvar os dados de uma Pessoa
-	 */
-	public Pessoa salvar(@Valid Pessoa pessoa) {
-		return dao.salvar(pessoa);
-	}
 
+    @Inject
+    private PessoaDao pessoaDao;
 
-	/**
-	 * Atualizar o dados de uma pessoa
-	 */
-	@Override
-	public Pessoa atualizar(@Valid Pessoa entity) {
-		return dao.atualizar(entity);
-	}
+    /**
+     * Salvar os dados de uma Pessoa
+     */
+    @Override
+    public Pessoa salvar(@Valid Pessoa pessoa) {
+        return pessoaDao.salvar(pessoa);
+    }
 
+    /**
+     * Atualizar o dados de uma pessoa
+     */
+    @Override
+    public Pessoa atualizar(@Valid Pessoa pessoa) {
+        return pessoaDao.atualizar(pessoa);
+    }
 
-	/**
-	 * Remover uma pessoa pelo id
-	 */
-	@Override
-	public void remover(@Valid Long id) {
-		dao.remover(id);		
-	}
+    /**
+     * Remover uma pessoa pelo id
+     */
+    @Override
+    public void remover(@Valid Long id) {
+        pessoaDao.remover(id);
+    }
 
+    /**
+     * Buscar uma lista de Pessoas
+     */
+    @Override
+    public Optional<List<Pessoa>> getList() {
+        return pessoaDao.getList();
+    }
 
-	/**
-	 * Buscar uma lista de Pessoa
-	 */
-	@Override
-	public Optional<List<Pessoa>> getList() {
-		return dao.getList();
-	}
-
-
-	/**
-	 * Buscar uma Pessoa pelo ID
-	 */
-	@Override
-	public Optional<Pessoa> encontrar(Long id) {
-		return dao.encontrar(id);
-	}
+    /**
+     * Buscar uma Pessoa pelo ID
+     */
+    @Override
+    public Optional<Pessoa> encontrar(Long id) {
+        return pessoaDao.encontrar(id);
+    }
 
 }
