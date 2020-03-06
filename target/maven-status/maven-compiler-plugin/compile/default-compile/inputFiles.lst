@@ -1,0 +1,9 @@
+/home/dernival_liandro/workspace/projeto-jpa-cdi/src/main/java/com/stefanini/dao/util/JPAUtil.java
+/home/dernival_liandro/workspace/projeto-jpa-cdi/src/main/java/com/stefanini/dao/PessoaDao.java
+/home/dernival_liandro/workspace/projeto-jpa-cdi/src/main/java/com/stefanini/teste/App.java
+/home/dernival_liandro/workspace/projeto-jpa-cdi/src/main/java/com/stefanini/model/Perfil.java
+/home/dernival_liandro/workspace/projeto-jpa-cdi/src/main/java/com/stefanini/model/Pessoa.java
+/home/dernival_liandro/workspace/projeto-jpa-cdi/src/main/java/com/stefanini/model/Endereco.java
+/home/dernival_liandro/workspace/projeto-jpa-cdi/src/main/java/com/stefanini/servico/PessoaServico.java
+/home/dernival_liandro/workspace/projeto-jpa-cdi/src/main/java/com/stefanini/dao/abstracao/GenericDao.java
+/home/dernival_liandro/workspace/projeto-jpa-cdi/src/main/java/com/stefanini/util/IGenericService.java
